@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Форма отправки</title>
+  </head>
+  <body>
+    <form name="test" method="POST">
+      <p><b>Ваше имя:</b><br/>
+        <input type="text" name="user_name" required placeholder="Введите имя"/>
+        <input type="tel" name="user_phone" size="25" placeholder="Введите номер телефона"/>
+      </p>
+      <p><b>Ваше Email:</b>
+        <input type="email" name="user_email" placeholder="Введите Email"/>
+      </p>
+      <p><b>Введите пароль:</b>
+        <input type="password" pattern="[0-9]{5,10}" name="user_password" size="25" placeholder="От пяти до десяти цифр"/>
+      </p>
+      <p> 
+        <b>Какую марку автомобиля вы ищите:</b><br/>
+        <input type="radio" name="car" required value="bmw"/> BMW
+        <input type="radio" name="car" value="lada"/> Lada
+        <input type="radio" name="car" value="opel"/> Opel<br/>
+        <input type="radio" name="car" value="mazda"/> Mazda
+        <input type="radio" name="car" value="audi"/> Audi
+        <input type="radio" name="car" value="volvo"/> Volvo<br/>
+      </p>
+      <p>
+        <b>Ваши пожелания:</b><br />
+        <textarea name="comment" cols="54" rows="11"></textarea>
+      </p>
+      <p>
+        <button type="submit" value="Отправить">Отправить</button>
+        <button type="reset" value="Очистить">Очистить</button>
+      </p>
+    </form>
+  </body>
+</html>
